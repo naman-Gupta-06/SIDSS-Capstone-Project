@@ -70,3 +70,47 @@ $$Score_{final} = 0.4(S_{fin}) + 0.3(S_{env}) + 0.2(S_{soc}) + 0.1(S_{eng})$$
 4. Conclusion
 
 SIDSS demonstrates that sustainability is not just a qualitative buzzword but a computable engineering metric. By formalizing the trade-offs between cost, carbon, and social benefit, this system empowers governments to approve infrastructure that is financially viable and environmentally responsible.
+
+
+## 🚀 How to Run SIDSS Locally
+
+If you want to test or evaluate the SIDSS platform on your own machine, follow these steps.
+
+### Prerequisites
+Make sure you have the following installed on your computer:
+* **Java 17 or higher** (Verify with `java -version`)
+* **Maven** (Verify with `mvn -version`)
+* **Node.js & npm** (Verify with `node -v` and `npm -v`)
+
+### Step 1: Clone the Repository
+Open your terminal and clone this project to your local machine:
+```bash
+git clone [https://github.com/YOUR_USERNAME/SIDSS-Capstone-Project.git](https://github.com/YOUR_USERNAME/SIDSS-Capstone-Project.git)
+cd SIDSS-Capstone-Project
+
+Step 2: Start the Java Backend
+The backend runs on Spring Boot and processes the multi-criteria algorithms.
+Open a terminal and run:
+Bash
+
+cd sidss-backend
+mvn spring-boot:run
+
+Wait until you see the "Started SidssApplication" message. The server will run on http://localhost:8080.
+
+
+Step 3: Start the React Frontend
+Open a new, separate terminal window (keep the backend running) and start the frontend dashboard.
+Bash
+
+cd sidss-frontend
+npm install
+npm run dev
+
+Step 4: Use the Application
+
+    Open your web browser and go to the link provided by Vite (usually http://localhost:5173).
+
+    Enter your project materials, costs, and policy parameters in the Input Dashboard.
+
+    Click "RUN EVALUATION" to see the system calculate the NPV, Carbon Footprint, and Final Sustainability Score!
