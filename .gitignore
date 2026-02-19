@@ -1,0 +1,21 @@
+# Frontend (React/Node)
+sidss-frontend/node_modules/
+sidss-frontend/dist/
+.env
+
+# Backend (Java/Maven)
+sidss-backend/target/
+*.jar
+*.war
+
+# IDE files (VS Code, IntelliJ, Eclipse)
+.vscode/
+.idea/
+*.iml
+*.classpath
+*.project
+*.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
